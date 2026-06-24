@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect width="980" height="520" fill="#fbfbf8"/>
+  <text x="40" y="52" font-size="28" font-family="Arial, 'Microsoft YaHei'" font-weight="700" fill="#20242b">Day 1-2：Roofline 判断瓶颈</text>
+  <line x1="120" y1="420" x2="840" y2="420" stroke="#20242b" stroke-width="2"/>
+  <line x1="120" y1="420" x2="120" y2="100" stroke="#20242b" stroke-width="2"/>
+  <text x="390" y="465" font-size="18" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">算术强度 FLOPs / Byte</text>
+  <text x="30" y="245" font-size="18" font-family="Arial, 'Microsoft YaHei'" fill="#20242b" transform="rotate(-90 30,245)">性能 FLOP/s</text>
+  <path d="M130 410 L420 170 L830 170" fill="none" stroke="#2f6fb2" stroke-width="5"/>
+  <text x="195" y="310" font-size="18" font-family="Arial, 'Microsoft YaHei'" fill="#2f6fb2">带宽上限：memory-bound</text>
+  <text x="555" y="150" font-size="18" font-family="Arial, 'Microsoft YaHei'" fill="#2f6fb2">计算上限：compute-bound</text>
+  <circle cx="260" cy="305" r="12" fill="#e64b35"/>
+  <text x="280" y="310" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">softmax/reduction 常在这里</text>
+  <circle cx="610" cy="175" r="12" fill="#00a087"/>
+  <text x="630" y="180" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">大 GEMM 可能在这里</text>
+  <rect x="610" y="315" width="245" height="72" rx="8" fill="#fff" stroke="#c8c8c8"/>
+  <text x="632" y="343" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">优化方向：</text>
+  <text x="632" y="370" font-size="15" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">少搬数据、提高复用、用满计算单元</text>
+</svg>

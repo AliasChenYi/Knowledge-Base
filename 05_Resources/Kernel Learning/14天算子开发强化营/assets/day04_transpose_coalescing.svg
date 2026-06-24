@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect width="980" height="520" fill="#fbfbf8"/>
+  <text x="40" y="52" font-size="28" font-family="Arial, 'Microsoft YaHei'" font-weight="700" fill="#20242b">Day 4：Transpose 与访存合并</text>
+  <text x="100" y="105" font-size="20" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">Naive：读连续，写跨行</text>
+  <text x="585" y="105" font-size="20" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">Tiled：借 shared memory 转置</text>
+  <g stroke="#8c8c8c" fill="#fff">
+    <rect x="80" y="135" width="280" height="220"/>
+    <rect x="585" y="135" width="280" height="220"/>
+  </g>
+  <g stroke="#cfd8dc">
+    <path d="M115 135 V355"/><path d="M150 135 V355"/><path d="M185 135 V355"/><path d="M220 135 V355"/><path d="M255 135 V355"/><path d="M290 135 V355"/><path d="M325 135 V355"/>
+    <path d="M80 170 H360"/><path d="M80 205 H360"/><path d="M80 240 H360"/><path d="M80 275 H360"/><path d="M80 310 H360"/>
+    <path d="M620 135 V355"/><path d="M655 135 V355"/><path d="M690 135 V355"/><path d="M725 135 V355"/><path d="M760 135 V355"/><path d="M795 135 V355"/><path d="M830 135 V355"/>
+    <path d="M585 170 H865"/><path d="M585 205 H865"/><path d="M585 240 H865"/><path d="M585 275 H865"/><path d="M585 310 H865"/>
+  </g>
+  <path d="M100 155 H330" stroke="#00a087" stroke-width="8" stroke-linecap="round"/>
+  <path d="M345 155 V335" stroke="#e64b35" stroke-width="8" stroke-linecap="round"/>
+  <path d="M605 155 H845" stroke="#00a087" stroke-width="8" stroke-linecap="round"/>
+  <path d="M605 335 H845" stroke="#00a087" stroke-width="8" stroke-linecap="round"/>
+  <rect x="690" y="210" width="110" height="80" rx="8" fill="#fff0d8" stroke="#c9801c" stroke-width="2"/>
+  <text x="704" y="256" font-size="18" font-family="Arial, 'Microsoft YaHei'" fill="#8a5315">shared tile</text>
+  <text x="95" y="405" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">红色表示不连续写：内存事务浪费</text>
+  <text x="585" y="405" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">两边都尽量连续：带宽利用率更高</text>
+</svg>

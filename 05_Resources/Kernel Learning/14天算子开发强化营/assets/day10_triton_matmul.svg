@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect width="980" height="520" fill="#fbfbf8"/>
+  <text x="40" y="52" font-size="28" font-family="Arial, 'Microsoft YaHei'" font-weight="700" fill="#20242b">Day 10：Triton Matmul 分块</text>
+  <rect x="80" y="120" width="230" height="250" fill="#e8f2ff" stroke="#2f6fb2" stroke-width="2"/>
+  <text x="170" y="105" font-size="19" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">A[M,K]</text>
+  <rect x="130" y="165" width="100" height="95" fill="#99c8ff" stroke="#2f6fb2"/>
+  <rect x="380" y="120" width="250" height="230" fill="#fff0d8" stroke="#c9801c" stroke-width="2"/>
+  <text x="475" y="105" font-size="19" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">B[K,N]</text>
+  <rect x="430" y="165" width="115" height="95" fill="#ffd48c" stroke="#c9801c"/>
+  <rect x="700" y="120" width="210" height="250" fill="#dff6e8" stroke="#3a7d44" stroke-width="2"/>
+  <text x="780" y="105" font-size="19" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">C[M,N]</text>
+  <rect x="750" y="165" width="95" height="95" fill="#9be6b0" stroke="#3a7d44"/>
+  <path d="M230 212 H430" stroke="#555" stroke-width="3" marker-end="url(#arrow10)"/>
+  <path d="M545 212 H750" stroke="#555" stroke-width="3" marker-end="url(#arrow10)"/>
+  <text x="314" y="205" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">沿 K 循环累加</text>
+  <text x="155" y="410" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">BLOCK_M x BLOCK_K</text>
+  <text x="430" y="410" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">BLOCK_K x BLOCK_N</text>
+  <text x="735" y="410" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">BLOCK_M x BLOCK_N</text>
+  <defs>
+    <marker id="arrow10" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+</svg>

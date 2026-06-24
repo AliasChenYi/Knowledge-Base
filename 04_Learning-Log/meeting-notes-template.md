@@ -5,6 +5,10 @@
 - Date（日期）：
 - Attendees（参会人）：
 
+## Context
+- 背景：
+- 目标：
+
 ## Key Discussion
 - 讨论点 1
 - 讨论点 2
@@ -14,3 +18,6 @@
 
 ## Action Items
 - Owner / Task / Deadline
+
+## Open Questions
+- 待确认问题：

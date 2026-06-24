@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect width="980" height="520" fill="#fbfbf8"/>
+  <text x="40" y="52" font-size="28" font-family="Arial, 'Microsoft YaHei'" font-weight="700" fill="#20242b">Day 14：你的入职前交付包</text>
+  <g font-family="Arial, 'Microsoft YaHei'" font-size="17" text-anchor="middle">
+    <rect x="100" y="130" width="180" height="85" rx="10" fill="#e8f2ff" stroke="#2f6fb2" stroke-width="2"/>
+    <text x="190" y="165">Kernel 实现</text><text x="190" y="192">5-6 个小算子</text>
+    <rect x="400" y="130" width="180" height="85" rx="10" fill="#fff0d8" stroke="#c9801c" stroke-width="2"/>
+    <text x="490" y="165">Correctness</text><text x="490" y="192">随机/边界测试</text>
+    <rect x="700" y="130" width="180" height="85" rx="10" fill="#dff6e8" stroke="#3a7d44" stroke-width="2"/>
+    <text x="790" y="165">Benchmark</text><text x="790" y="192">shape sweep</text>
+    <rect x="250" y="300" width="180" height="85" rx="10" fill="#ffffff" stroke="#8c8c8c" stroke-width="2"/>
+    <text x="340" y="335">Profiling</text><text x="340" y="362">瓶颈证据</text>
+    <rect x="550" y="300" width="180" height="85" rx="10" fill="#ffffff" stroke="#8c8c8c" stroke-width="2"/>
+    <text x="640" y="335">总结报告</text><text x="640" y="362">能讲清取舍</text>
+  </g>
+  <path d="M280 173 H397" stroke="#555" stroke-width="3" marker-end="url(#arrow14)"/>
+  <path d="M580 173 H697" stroke="#555" stroke-width="3" marker-end="url(#arrow14)"/>
+  <path d="M790 216 L640 297" stroke="#555" stroke-width="3" marker-end="url(#arrow14)"/>
+  <path d="M490 216 L340 297" stroke="#555" stroke-width="3" marker-end="url(#arrow14)"/>
+  <defs>
+    <marker id="arrow14" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+</svg>

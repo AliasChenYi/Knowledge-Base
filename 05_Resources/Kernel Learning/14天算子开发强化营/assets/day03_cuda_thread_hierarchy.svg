@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect width="980" height="520" fill="#f7fafc"/>
+  <text x="40" y="52" font-size="28" font-family="Arial, 'Microsoft YaHei'" font-weight="700" fill="#18202a">Day 3：CUDA 线程层级</text>
+  <rect x="70" y="100" width="840" height="330" rx="12" fill="#eef6f0" stroke="#3a7d44" stroke-width="2"/>
+  <text x="450" y="135" font-size="22" font-family="Arial, 'Microsoft YaHei'" font-weight="700" fill="#2f6638">Grid</text>
+  <g fill="#ffffff" stroke="#3a7d44" stroke-width="2">
+    <rect x="120" y="170" width="220" height="200" rx="8"/>
+    <rect x="380" y="170" width="220" height="200" rx="8"/>
+    <rect x="640" y="170" width="220" height="200" rx="8"/>
+  </g>
+  <text x="200" y="200" font-size="18" font-family="Arial, 'Microsoft YaHei'" fill="#18202a">Block 0</text>
+  <text x="460" y="200" font-size="18" font-family="Arial, 'Microsoft YaHei'" fill="#18202a">Block 1</text>
+  <text x="720" y="200" font-size="18" font-family="Arial, 'Microsoft YaHei'" fill="#18202a">Block 2</text>
+  <g fill="#dff0ff" stroke="#2f6fb2">
+    <rect x="155" y="235" width="36" height="36" rx="4"/><rect x="200" y="235" width="36" height="36" rx="4"/><rect x="245" y="235" width="36" height="36" rx="4"/>
+    <rect x="155" y="285" width="36" height="36" rx="4"/><rect x="200" y="285" width="36" height="36" rx="4"/><rect x="245" y="285" width="36" height="36" rx="4"/>
+    <rect x="415" y="235" width="36" height="36" rx="4"/><rect x="460" y="235" width="36" height="36" rx="4"/><rect x="505" y="235" width="36" height="36" rx="4"/>
+    <rect x="675" y="235" width="36" height="36" rx="4"/><rect x="720" y="235" width="36" height="36" rx="4"/><rect x="765" y="235" width="36" height="36" rx="4"/>
+  </g>
+  <text x="142" y="345" font-size="15" font-family="Arial, 'Microsoft YaHei'" fill="#405060">threadIdx.x 决定块内线程</text>
+  <text x="402" y="345" font-size="15" font-family="Arial, 'Microsoft YaHei'" fill="#405060">blockIdx.x 决定数据块</text>
+  <text x="652" y="345" font-size="15" font-family="Arial, 'Microsoft YaHei'" fill="#405060">全局 id = block * blockDim + thread</text>
+</svg>

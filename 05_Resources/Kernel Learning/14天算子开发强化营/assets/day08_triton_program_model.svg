@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect width="980" height="520" fill="#fbfbf8"/>
+  <text x="40" y="52" font-size="28" font-family="Arial, 'Microsoft YaHei'" font-weight="700" fill="#20242b">Day 8：Triton Program 映射到数据块</text>
+  <rect x="85" y="120" width="360" height="280" rx="10" fill="#ffffff" stroke="#8c8c8c"/>
+  <text x="190" y="105" font-size="19" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">输入矩阵 rows</text>
+  <g fill="#e8f2ff" stroke="#2f6fb2">
+    <rect x="115" y="150" width="300" height="42"/><rect x="115" y="200" width="300" height="42"/><rect x="115" y="250" width="300" height="42"/><rect x="115" y="300" width="300" height="42"/>
+  </g>
+  <text x="485" y="190" font-size="18" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">program_id(0)=0</text>
+  <text x="485" y="240" font-size="18" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">program_id(0)=1</text>
+  <text x="485" y="290" font-size="18" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">program_id(0)=2</text>
+  <text x="485" y="340" font-size="18" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">program_id(0)=3</text>
+  <rect x="650" y="150" width="220" height="190" rx="10" fill="#fff0d8" stroke="#c9801c" stroke-width="2"/>
+  <text x="682" y="195" font-size="18" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">一个 program</text>
+  <text x="682" y="230" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">处理一个 block</text>
+  <text x="682" y="260" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">tl.arange 生成偏移</text>
+  <text x="682" y="290" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">mask 处理越界</text>
+</svg>

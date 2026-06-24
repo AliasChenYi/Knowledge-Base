@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect width="980" height="520" fill="#f7fafc"/>
+  <text x="40" y="52" font-size="28" font-family="Arial, 'Microsoft YaHei'" font-weight="700" fill="#18202a">Day 11：GEMM 三层分块</text>
+  <rect x="90" y="130" width="220" height="260" rx="10" fill="#e8f2ff" stroke="#2f6fb2" stroke-width="2"/>
+  <text x="145" y="166" font-size="20" font-family="Arial, 'Microsoft YaHei'" fill="#18202a">CTA tile</text>
+  <text x="125" y="205" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">一个 block 负责</text>
+  <text x="125" y="232" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">C 的一块区域</text>
+  <rect x="380" y="160" width="220" height="200" rx="10" fill="#fff0d8" stroke="#c9801c" stroke-width="2"/>
+  <text x="435" y="198" font-size="20" font-family="Arial, 'Microsoft YaHei'" fill="#18202a">Warp tile</text>
+  <text x="415" y="237" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">block 内多个 warp</text>
+  <text x="415" y="264" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">分担 CTA tile</text>
+  <rect x="670" y="190" width="220" height="140" rx="10" fill="#dff6e8" stroke="#3a7d44" stroke-width="2"/>
+  <text x="725" y="228" font-size="20" font-family="Arial, 'Microsoft YaHei'" fill="#18202a">MMA tile</text>
+  <text x="705" y="267" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">Tensor Core / 指令级</text>
+  <path d="M310 260 H377" stroke="#555" stroke-width="3" marker-end="url(#arrow11)"/>
+  <path d="M600 260 H667" stroke="#555" stroke-width="3" marker-end="url(#arrow11)"/>
+  <text x="155" y="438" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#405060">目标：让 A/B 从 HBM 搬一次，被尽量多次复用。</text>
+  <defs>
+    <marker id="arrow11" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+</svg>

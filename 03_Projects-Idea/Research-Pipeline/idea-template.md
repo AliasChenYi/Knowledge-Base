@@ -2,6 +2,11 @@
 
 ## Idea Name
 
+## Status
+- Backlog / Active / Paused / Done：
+- Owner：
+- Created：
+
 ## Motivation
 这个想法要解决的痛点或机会是什么？
 
@@ -18,6 +23,9 @@
 ## Risks
 - 风险 1
 - 风险 2
+
+## Stop Criteria
+- 在什么条件下停止投入：
 
 ## Next Action (within 48h)
 - 行动项 1

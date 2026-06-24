@@ -149,6 +149,8 @@ activemq-data/
 
 # Environments
 .env
+.env.*
+!.env.example
 .envrc
 .venv
 env/
@@ -216,3 +218,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local credentials and private runtime config
+secrets/
+credentials/
+*.secret
+*.secrets
+*.token
+*.key
+*.pem
+*.local.toml
+*.private.toml
+config.local.toml

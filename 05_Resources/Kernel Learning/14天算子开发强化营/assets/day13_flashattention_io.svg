@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect width="980" height="520" fill="#f7fafc"/>
+  <text x="40" y="52" font-size="28" font-family="Arial, 'Microsoft YaHei'" font-weight="700" fill="#18202a">Day 13：普通 Attention vs FlashAttention</text>
+  <rect x="80" y="115" width="360" height="300" rx="10" fill="#fff" stroke="#c8c8c8"/>
+  <text x="155" y="150" font-size="20" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">普通 Attention</text>
+  <rect x="115" y="180" width="110" height="52" rx="6" fill="#e8f2ff" stroke="#2f6fb2"/>
+  <text x="150" y="212" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">QK^T</text>
+  <rect x="275" y="180" width="110" height="52" rx="6" fill="#ffe5e0" stroke="#e64b35"/>
+  <text x="295" y="212" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">S[N,N]</text>
+  <rect x="115" y="290" width="110" height="52" rx="6" fill="#fff0d8" stroke="#c9801c"/>
+  <text x="145" y="322" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">softmax</text>
+  <rect x="275" y="290" width="110" height="52" rx="6" fill="#dff6e8" stroke="#3a7d44"/>
+  <text x="305" y="322" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">乘 V</text>
+  <text x="117" y="385" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#e64b35">巨大中间矩阵写回 HBM</text>
+  <rect x="535" y="115" width="360" height="300" rx="10" fill="#fff" stroke="#c8c8c8"/>
+  <text x="620" y="150" font-size="20" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">FlashAttention</text>
+  <rect x="580" y="185" width="270" height="80" rx="8" fill="#fff0d8" stroke="#c9801c" stroke-width="2"/>
+  <text x="623" y="218" font-size="17" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">Q/K/V 分块进入 SRAM</text>
+  <text x="623" y="247" font-size="17" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">online softmax 边算边合并</text>
+  <rect x="625" y="310" width="180" height="52" rx="6" fill="#dff6e8" stroke="#3a7d44"/>
+  <text x="666" y="342" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">直接输出 O</text>
+  <text x="575" y="385" font-size="16" font-family="Arial, 'Microsoft YaHei'" fill="#3a7d44">核心收益：少读写慢内存</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect width="980" height="520" fill="#f7fafc"/>
+  <text x="40" y="52" font-size="28" font-family="Arial, 'Microsoft YaHei'" font-weight="700" fill="#18202a">Day 9：Triton Fused Softmax</text>
+  <g font-family="Arial, 'Microsoft YaHei'" font-size="16" text-anchor="middle">
+    <rect x="90" y="150" width="150" height="68" rx="8" fill="#e8f2ff" stroke="#2f6fb2" stroke-width="2"/>
+    <text x="165" y="190">load 一整行</text>
+    <rect x="295" y="150" width="150" height="68" rx="8" fill="#fff0d8" stroke="#c9801c" stroke-width="2"/>
+    <text x="370" y="178">max</text><text x="370" y="200">减最大值</text>
+    <rect x="500" y="150" width="150" height="68" rx="8" fill="#fff0d8" stroke="#c9801c" stroke-width="2"/>
+    <text x="575" y="178">exp</text><text x="575" y="200">sum</text>
+    <rect x="705" y="150" width="150" height="68" rx="8" fill="#dff6e8" stroke="#3a7d44" stroke-width="2"/>
+    <text x="780" y="190">store 结果</text>
+    <g stroke="#555" stroke-width="2" marker-end="url(#arrow9)">
+      <line x1="240" y1="184" x2="292" y2="184"/>
+      <line x1="445" y1="184" x2="497" y2="184"/>
+      <line x1="650" y1="184" x2="702" y2="184"/>
+    </g>
+  </g>
+  <rect x="180" y="310" width="620" height="90" rx="10" fill="#ffffff" stroke="#c8c8c8"/>
+  <text x="205" y="344" font-size="17" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">融合点：中间的 shifted / exp / denominator 留在寄存器或片上，不写回 HBM。</text>
+  <text x="205" y="376" font-size="17" font-family="Arial, 'Microsoft YaHei'" fill="#20242b">核心参数：BLOCK_SIZE、num_warps、mask、行长度是否接近 2 的幂。</text>
+  <defs>
+    <marker id="arrow9" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+</svg>

@@ -11,3 +11,9 @@
 ## Core Files
 - `idea-template.md`
 - `experiment-template.md`
+- `experiment-log-index.md`
+
+## Decision Rule
+- `Continue`：指标达到预期，且风险可控。
+- `Pivot`：方向有价值，但当前方法或假设需要调整。
+- `Stop`：结果不支持投入，或成本明显高于收益。

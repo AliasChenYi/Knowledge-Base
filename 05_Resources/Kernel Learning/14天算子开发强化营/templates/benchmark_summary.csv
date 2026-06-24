@@ -1,0 +1,3 @@
+date,operator,shape,dtype,baseline,baseline_ms,my_impl,my_ms,speedup,correctness,hardware,notes
+2026-05-26,vector_add,"N=1048576",fp32,pytorch,,cuda_kernel,,,pending,,
+
